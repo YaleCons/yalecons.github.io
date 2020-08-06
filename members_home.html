@@ -1,0 +1,165 @@
+<HTML>
+  <head>
+    <link rel="stylesheet" type="text/css" href="stylesheets/header.css">
+    <title>Conservative Party</title>
+
+
+    <script src="jquery.js"></script>
+    <script type="text/javascript">
+      /*  jQuery ready function. Specify a function to execute when the DOM is fully loaded.  */
+      $(document).ready(
+      /* This is the function that will get executed after the DOM is fully loaded */
+      function () {
+      /* Next part of code handles hovering effect and submenu appearing */
+      $('.nav li').hover(
+      function () { //appearing on hover
+      $('ul', this).slideDown();
+      },
+      function () { //disappearing on hover
+      $('ul', this).slideUp();
+      }
+      );
+      }
+      );
+      
+    </script>
+    <style>
+      
+      body {
+      color:#333;
+      text-align:center;
+      font-family: arial;
+      }
+
+      .navigation {
+      margin: -40px 0 0;
+      }
+      .nav {
+      width: 100%;
+      display: table;
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+      }
+
+      .nav > li {
+      display: table-cell;
+      width: 120px;
+      vertical-align:middle;
+
+      font-size: 15px;
+      position: relative;
+      background: #333;
+      }
+
+      .nav li a {
+      background: #333;
+      height: 100%;
+      vertical-align:middle;
+      color: #fff;
+      display: block;
+      padding: 7px 8px;
+      text-decoration: none;
+      }
+
+
+      /*=== submenu ===*/
+
+      #pos_fix{
+      position: relative;
+      }
+
+      .nav ul {
+      display: none;
+      position: absolute;
+      margin-left: 0px;
+      list-style: none;
+      padding: 0px;
+      }
+
+      .nav ul li {
+      display: block;
+      position: relative;
+      width: 160px;
+      float: left;
+      }
+
+      .nav ul a {
+      display: block;
+      height: 15px;
+      padding: 7px 8px;
+      color: #fff;
+      text-decoration: none;
+      border-bottom: 1px solid #222;
+      }
+
+      .nav a:hover {
+      color: #933;
+      }
+
+    </style>
+
+  </head>
+  
+  <body id="home">
+    <div id="header">
+      <div>
+	<img src="img/crest.png">
+      </div>
+      <div class="title">
+	<div>
+	  <h1 style="margin:30px auto 0px">CONSERVATIVE PARTY</h1>
+          <h2>Member's Area</h2>
+	</div>
+      </div>
+    </div>
+
+
+    <div class="navigation">
+      <ul class="nav">
+  	<li>
+  	  <a href="#">Home</a>
+  	</li>
+  	<li>
+  	  <a href="#">Resources For Alumni</a>
+          <div id="pos_fix">
+  	    <ul>
+  	      <li><a href="#">Mentorship Program</a></li>
+  	      <li><a href="#">Get E-Whipped</a></li>
+  	      <li><a href="#">Upcoming Events</a></li>
+              <li><a href="#">Alumni Newsletters</a></li>
+  	    </ul>
+          </div>
+  	</li>
+  	<li>
+  	  <a href="#">Donations</a>
+  	</li>
+        <li>
+  	  <a href="#">Membership Directory</a>
+  	</li>
+  	<li>
+  	  <a href="#">Professional Resources</a>
+  	</li>
+  	<li>
+  	  <a href="#">History</a>
+          <div id="pos_fix">
+            <ul>
+              <li><a href="#">Photo Gallery</a></li>
+            </ul>
+          </div>
+  	</li>
+  	<li>
+  	  <a href="#">Documents</a>
+  	</li>
+        <li>
+          <a href="#">Manage Account</a>
+        </li>
+        <li>
+          <a href="#">Exit</a>
+        </li>
+      </ul>
+    </div>
+
+  </body>
+
+</html>

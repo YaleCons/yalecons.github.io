@@ -1,0 +1,96 @@
+body {
+    min-width: 1200px;
+}
+
+#header {
+    overflow: hidden;
+}
+
+#header > div:first-child {
+    float: left;
+}
+
+#header img {
+    margin: 50px;
+    height: 175px;
+    width: auto;
+}
+
+h1 {
+    font-size: 600%;
+    margin-right: 50px;
+}
+
+.title {
+    margin: 0 0 0 0;
+}
+
+.title div {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#navigation_container {
+    overflow: hidden;
+}
+
+#navigation_container > div {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.navigation_item_container {
+    width: 150px;
+    height: 100px;
+    background-color:#ddd;
+    display: table;
+    position: relative;
+}
+
+body#home div#homenav,
+body#petitioner div#petitionernav,
+body#contact div#contactnav,
+body#history div#historynav,
+body#member div#membernav {
+    background-color:#bbb;
+}
+
+.navigation_item_container span {
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left: 0;
+    z-index: 1;
+}
+
+.navigation_item_container a {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+
+    text-decoration: none;
+    color: black;
+}
+
+.navigation_item_container p {
+    display: table-cell;
+}
+
+#navigation_container_inner {
+    margin: -100 0 0 150;
+}
+
+#navigation_container_inner > div {
+    float:left;
+    width: 25%;
+}
+
+#navigation_container_inner > div > .navigation_item_container {
+    float:right;
+}
+
+#content {
+    width: 70%;
+    margin: 100px auto;
+}
